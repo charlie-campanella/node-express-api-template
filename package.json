@@ -1,0 +1,42 @@
+{
+  "name": "api-template",
+  "version": "0.0.1",
+  "description": "Template to quickly bootstrap a Node/Express API",
+  "main": "app/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "./node_modules/nodemon/bin/nodemon.js app/index.js",
+    "test": "./node_modules/mocha/bin/mocha test --recursive",
+    "docs": "./node_modules/.bin/jsdoc app/ -r -d ./docs --readme ./README.md && open ./docs/index.html"
+  },
+  "author": "Charlie Campanella",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "4.1.2",
+    "jsdoc": "3.5.5",
+    "mocha": "3.5.3",
+    "mongoose-mock": "0.4.0",
+    "nodemon": "1.12.0",
+    "proxyquire": "1.8.0",
+    "sinon": "3.2.1",
+    "sinon-chai": "2.14.0",
+    "sinon-express-mock": "1.3.1",
+    "supertest": "3.0.0"
+  },
+  "dependencies": {
+    "bcrypt": "1.0.3",
+    "body-parser": "1.18.1",
+    "dotenv": "4.0.0",
+    "express": "4.15.4",
+    "express-force-https": "1.0.0",
+    "express-rate-limit": "2.9.0",
+    "helmet": "3.8.1",
+    "hpp": "0.2.2",
+    "jsonwebtoken": "8.0.1",
+    "mailgun-js": "0.13.1",
+    "mongoose": "4.11.11",
+    "mongoose-unique-validator": "1.0.6"
+  }
+}

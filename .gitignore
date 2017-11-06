@@ -1,0 +1,10 @@
+# Untracked Directories
+docs
+node_modules
+
+# Untracked Files
+app/config/develop/credentials.js
+app/config/production/credentials.js
+
+# Untracked File Types
+*.DS_Store
